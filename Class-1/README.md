@@ -22,25 +22,25 @@ Duration: 1 Hour
 ## Topics (20 minutes): 
 ### Syntax/Getting started 
  - Type out this line of code and ask kids to figure out what it means:
-    ```java
-	Robot robbie=new Robot (1,1, North, 100);
-	```
+```java
+Robot robbie=new Robot (1,1, North, 100);
+```
  - Make sure they figure out: we’re creating a new robot, the robot is called `robbie`, and try to lead them into figuring out (1,1, North,...) means robbie is at 1,1 and facing North
     - (street,avenue, direction, number of beepers) 
     - Note: there has to be beepers in order for robbie to run 	
  - Type these lines of code and ask kids to point out  what re-occurs a lot: 
-   ```java
-   robbie.turnLeft(); 
-	robbie.move();
-	robbie.putBeeper();
-	robbie.move();
+```java
+robbie.turnLeft(); 
+robbie.move();
+robbie.putBeeper();
+robbie.move();
+robbie.turnLeft();
+robbie.turnLeft();
+if(robbie.isFrontClear() =true) {
 	robbie.turnLeft();
-	robbie.turnLeft();
-	if(robbie.isFrontClear() =true) {
-		robbie.turnLeft();
-		robbie.move();
-	}
-	```
+	robbie.move();
+}
+```
  - Make sure they figure out: always `robbie.____` so we can tell `robbie` what to do, there is always `();` at the end of the command because it tells the computer that it is the end of the command, and that the if statement only does what’s in the brackets and **double check that they understand this**.  
      - **CHALLENGE**: Have them make karel run in a square.
          - Objective: getting use to Karel commands/syntax 
@@ -68,13 +68,13 @@ Duration: 1 Hour
  - `public static void main` is a function . It is the function that is executed when you run the class.
      - function returns either: `int`, `boolean`, or `void` (Nothing)
      - Show them how to create a function called “turnRight” 
-         ```java
-		 public void turnRight(){ 
-             robbie.turnLeft();
-             robbie.turnLeft();
-             robbie.turnLeft();
-         }
-		 ```
+```java
+public void turnRight(){ 
+    robbie.turnLeft();
+    robbie.turnLeft();
+    robbie.turnLeft();
+}
+```
       - **CHALLENGE**: have them create a function that will make Karel draw a 4x4 square. Have them use their function in the driver class. 
 
  - Explain that functions can take in arguments or pre-established variables 
@@ -98,14 +98,14 @@ Duration: 1 Hour
  - Have students draw out square without while
  - Have students identify pattern
  - Explain `while`
- - ```java
+```java
 int x=4;
 while (x>0){
-		you.eathamburger();
-		x--;
-	}
-	while(r.anyBeepersInBeeperBag() == true){
-		r.putBeeper();
+	you.eathamburger();
+	x--;
+}
+while(r.anyBeepersInBeeperBag() == true){
+	r.putBeeper();
 }```
  - Relate `while` to `robbie`
  - Have them change code to include `while`
@@ -138,10 +138,11 @@ while (x>0){
 7. Pick up a certain pile of beepers and move it to the location of the largest pile
 8. Collect all beepers into 1 pile.
 9. Make two robots and have them both do things.  
-10. Add user input using Scanner to get the requested size of the square  ```java
-    Scanner s = new Scanner(System.in); 
-	int length = s.nextInt();
-	```
+10. Add user input using Scanner to get the requested size of the square  
+```java
+Scanner s = new Scanner(System.in); 
+int length = s.nextInt();
+```
 10. Make it so that when the robot is making the square he alternates between putting one and two beepers.(using booleans)
 
 ### Evaluation and Closing (10 minutes)
