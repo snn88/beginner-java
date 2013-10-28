@@ -28,13 +28,12 @@ Duration: 1.5 Hours
      - Demo: `double cost= 5.20;`
      - Quick activity: 
 
-```java
+ - ```java
 int num=10; 
 int stuff=2;
 double cost=4.20;
 int answer = num + stuff - cost; 
 ```
-
      - Answer: 8
      - **CHALLENGE**: Create a tip calculator when user inputs total amount spent 
      - **CHALLENGE**: Create a calculator that will take into account of each person’s orders and calculate how much each person has to pay with tax and tip. Also, have the calculator automatically take into account of when there are parties of 6+, tips increase 18%.  
@@ -57,10 +56,11 @@ double stuff = (double)num+dub;
  - You can do several things with a string:
      - Find its length 
 
-```java
-String name= new String(“Daniel”); 
+ - ```java
+String name= new String("Daniel"); 
 System.out.println(name.length); 
 ```
+
 
      - Create shorter strings with the long string 
      - `name.substring(beginIndex, endIndex);`
