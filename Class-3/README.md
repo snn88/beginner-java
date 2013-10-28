@@ -40,16 +40,18 @@ Start a project called “Lesson 2” and make a class called `Lesson2` with a m
  - Imports (Explain how a program can access anything in the Java library: graphics, arrays, math functions, etc.)
 
 ### `if` Statements (go through thoroughly):
-[http://mathbits.com/MathBits/Java/Conditionals/If.htm]
+<http://mathbits.com/MathBits/Java/Conditionals/If.htm>
 
  - The statements are in an if/then format
 
 ```java
 if(test condition){
 	block of statements;
-}```
+}
+```
 
  - If the test condition evaluates to false, then the block of statements is not executed, but if the test condition is true, then the block of statements will be executed.
+
 #### Examples:
 
 ```java
@@ -65,13 +67,13 @@ if (true){
 #### Using `else if` and `else` statements
 You use `else if` and `else` statements in order to reduce the number of `if` statements or to condense/simplify code so that when the `if` statement evaluates to false, then you can move to the `else` statement or `else if` statement.
 
-Example: [examples/IfElseDemo.java]
+Example: [IfElseDemo.java](examples/IfElseDemo.java)
 
 ## Challenges and/or Work Time (45 minutes): 
 Finish previous program before working on this.
 Write a choose your own adventure story (this will involve nested “if” statements). 
 
-Example: [examples/AmadorAdventureDriver.java]
+Example: [AmadorAdventureDriver.java](examples/AmadorAdventureDriver.java)
 
 ## Evaluation and Closing (10 minutes)
  - Recap everything taught today
