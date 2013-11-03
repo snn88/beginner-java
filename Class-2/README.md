@@ -55,6 +55,7 @@ double stuff = (double)num+dub;
  - They are “strings” of text, a combination of chars (e.i. Hello World!) 
  - You can do several things with a string:
      - Find its length 
+ - Changing a string creates a new string
 
  - ```java
 String name= new String("Daniel"); 
